@@ -1,0 +1,47 @@
+EcoSight AI
+Jack Merrill (jsm443)
+Tinsae Walelign(tnw26)
+Yvon Gatete (yg274)
+
+Ai Keywords
+Statistics, Linear Algebra, Convolutional Neural Networks, Feature Extraction, Image recognition
+Application setting
+For use in a web or mobile application that detects trash and recycling.  Hopefully, it can be used in people-facing settings to eliminate the misidentification of trash/recycling products.
+Description
+This AI tool aims to provide users with fast identification of common waste items and designate them as trash or recycling.  It must do this quickly and accurately to be useful in a variety of settings.
+Big Picture
+We want to create a model that can quickly identify an object from a picture as trash or recycling.  The hope is that this could be used in modern-day waste management to ensure that less trash ends up in recycling and less recycling ends up in trash.  To do this, our program will need to run quickly and efficiently as users are unlikely to want to wait for long periods to have their waste identified.
+While the end-use case of our product is not well defined there are a myriad of ways we can see it potentially being used.  From educational settings where users may show a camera an item and are told whether to recycle it, to household or commercial sorting systems, we hope to build a robust program that can be used in a variety of use cases.
+In projects, we have seen models generate bounding boxes around objects and partition them into various categories such as aluminum cans, plastic water bottles, etc. Most of these projects have been more focused on ocean or land cleanup rather than directly in a waste stream setting.  We plan to build a program that can be used in educational, household, and commercial settings.
+AI Aspects at the Core
+The main aspect of AI we will employ is convolutional neural networks. We will train the CNN model on a diverse dataset containing annotated images of various waste items under different environmental conditions, lighting conditions, camera resolutions, and perspectives. During the training process, we will give the model labeled images of waste items and adjust the models parameters iteratively in order to optimize performance. We can also use transfer learning techniques to fine-tune pre-trained CNN architectures such as ResNet, Inception, or EfficientNet. 
+In addition to the convolutional layers, we will incorporate pooling layers to reduce spatial dimensions and improve computational efficiency. A commonly used pooling layer is max pooling, which downsamples the feature maps by selecting the maximum value within each pooling region. Max pooling will help us in preserving important features while reducing the computational burden 
+Furthermore, to optimize the speed of waste detection and classification, we will explore various optimization strategies such as model quantization and pruning. These techniques aim to reduce the model size and computational complexity without compromising its accuracy, thereby facilitating faster inference on resource-constrained devices."
+
+System Evaluation
+Approximately 15% of recycling is garbage and a lot more that is thrown out is recyclable.  Therefore the goal of our project is to create a detection system that can improve upon these numbers.  Since humans are about 85% accurate with what they recycle we will shoot for our system to be at least 92.5% accurate (a 50% improvement in accuracy over humans). We will measure this accuracy with a test dataset comprised of at least 1000 images taken in different lighting conditions, different resolution cameras, with a variety of materials, and from different sources.  The goal here is to ensure that our detection system is at least 92.5% accurate when used with a variety of cameras.
+Additionally, due to the convenience-driven nature of consumer behavior and the fast pace of commercial facilities, our algorithm must be capable of fast identification.  While we are not currently certain of how exactly the timing will look we are confident that timing plays a crucial role.  That is why we are setting a goal of identifications taking less than 2 seconds and a stretch goal of identifications taking less than 1 second.  This will be measured programmatically when we run our test dataset.
+Timeline
+March 1 - March 15 (Weeks 1-2): Project Setup and Planning
+Set up a development environment and gather initial resources and datasets.
+March 16 - March 31 (Weeks 3-4): Data Collection and Preparation
+Collect additional waste datasets, clean and preprocess data, and split into training, validation, and test sets.
+April 1 - April 15 (Weeks 5-6): Model Development
+Research and select pre-trained CNN architectures, implement CNN model, and fine-tune using transfer learning techniques.
+April 16 - April 30 (Weeks 7-8): Model Training and Evaluation
+Train CNN model, evaluate performance on validation set, and address any issues encountered during training.
+May 1 - May 15 (Weeks 9-10): Testing and Optimization
+Conduct thorough testing of the trained model using the test dataset, measure detection accuracy and speed, and optimize model performance.
+May 16 - May 18 (Week 11): Finalize and Prepare Presentation
+Finalize trained model and documentation, prepare presentation materials and report, conduct final review, and submit project deliverables.
+Existing Resources
+Software Resources
+In terms of software, we intend to use the following existing software resources, tools, and frameworks:
+TensorFlow and Keras: TensorFlow, an open-source ML framework, and its accompanying API, Keras, will be very helpful for building and training neural network models. Since Tensor flow provides support for deep learning tasks like image classification, it aligns well with our project. 
+PyTorch: We will also consider using Pytorch, which is another popular deep learning framework.
+OpenCV: We can use OpenCV for image preprocessing and manipulation such as image resizing and normalization. 
+Data Resources
+EcoSight Ai will be data intensive. It will require a lot of training data to be accurate. This is why we will be using external image libraries and annotations to assist in speeding up the training process.
+Waste Datasets: We will utilize publicly available waste datasets, such as the Waste Datasets from GitHub, which contain labeled images of various waste items.
+ImageNet: We could also consider using parts of the ImageNet dataset, which is an image database with millions of labeled images across thousands of categories. 
+
