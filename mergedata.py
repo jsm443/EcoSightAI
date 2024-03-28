@@ -2,6 +2,7 @@
 import os
 import numpy as np
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
 
 def image_paths_helper(folder_path):
     image_paths = []
@@ -53,13 +54,18 @@ all_dataset_O_and_R = np.concatenate((dataset_O_and_R, dataset_O_and_R2 ))
 waste_data = np.concatenate((merged_dataset1, all_dataset_O_and_R))
 
 
-recyclable_labels = np.full(len(waste_data), 'Recyclable')
-non_recyclable_labels = np.full(len(all_dataset_N), 'Non-Recyclable')
+label_encoder = LabelEncoder()
+waste_data_labels = np.array([os.path.basename(os.path.dirname(path)) for path in waste_data])
+waste_data_labels_encoded = label_encoder.fit_transform(waste_data_labels)
 
-all_data = np.concatenate((waste_data, all_dataset_N))
-all_labels = np.concatenate((recyclable_labels, non_recyclable_labels))
+train_images_waste_data, test_images_waste_data, train_labels_waste_data, test_labels_waste_data = train_test_split(waste_data, waste_data_labels_encoded, test_size=0.2, random_state=42)
 
-train_images, test_images, train_labels, test_labels = train_test_split(all_data, all_labels, test_size=0.2, random_state=42)
+
+
+print("Number of training images in waste_data:", len(train_images_waste_data))
+print("Number of testing images in waste_data:", len(test_images_waste_data))
+
+
 
 
 
