@@ -1,0 +1,33 @@
+Food and green	44
+Glass	5
+Metal	4
+Other	14
+Paper and cardboard	17
+Plastic	12
+Rubber and leather	2
+Wood	2
+
+
+10000 images
+
+4,400 food = 4400 food
+500 glass = 500 glass bottles
+400 metal = 400 aluminum cans
+1400 misc = 200 medical + 400 hazmat + 800 generic trash
+1700 paper/cardboard = 1000 paper + 700 cardboard
+1200 plastic = 500 bottles + 300 recyclable + 400 non recylable
+2 rubber/leather = 200 generic trash
+2 wood = 200 generic trash
+
+totals:
+4400 food
+500 glass
+400 aluminum
+200 medicalwaste
+400 hazmat
+1200 generic
+1000 paper
+700 cardboard
+500 plastic bottles
+300 generic plastic recyclable
+400 generic non recylable

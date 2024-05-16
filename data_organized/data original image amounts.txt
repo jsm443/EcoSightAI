@@ -1,0 +1,19 @@
+aluminum cans (209)
+cardboard (154)
+food (464)
+generic trash (478)
+glass bottle (201)
+hazardous waste (410)
+medical waste (176)
+paper (453)
+plastic bottle (401)
+plastic not recyclable (438)
+plastic recyclable (123)
+
+
+Sources
+https://www.kaggle.com/datasets/vencerlanz09/plastic-paper-garbage-bag-synthetic-images?resource=download
+https://github.com/arthur-cen/smartTrashBin/tree/master/data
+https://www.kaggle.com/datasets/sapal6/waste-classification-data-v2
+https://www.kaggle.com/datasets/wangziang/waste-pictures
+https://www.kaggle.com/datasets/arthurcen/waste-images-from-sushi-restaurant
