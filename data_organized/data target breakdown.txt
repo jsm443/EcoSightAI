@@ -1,3 +1,5 @@
+
+World waste percentages:
 Food and green	44
 Glass	5
 Metal	4
@@ -6,6 +8,7 @@ Paper and cardboard	17
 Plastic	12
 Rubber and leather	2
 Wood	2
+Source: https://www.sciencedirect.com/topics/earth-and-planetary-sciences/waste-composition
 
 
 10000 images
@@ -25,7 +28,7 @@ totals:
 400 aluminum
 200 medicalwaste
 400 hazmat
-1200 generic
+1200 generic trash
 1000 paper
 700 cardboard
 500 plastic bottles

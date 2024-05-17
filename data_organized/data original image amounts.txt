@@ -17,3 +17,4 @@ https://github.com/arthur-cen/smartTrashBin/tree/master/data
 https://www.kaggle.com/datasets/sapal6/waste-classification-data-v2
 https://www.kaggle.com/datasets/wangziang/waste-pictures
 https://www.kaggle.com/datasets/arthurcen/waste-images-from-sushi-restaurant
+https://www.kaggle.com/datasets/kmader/food41
